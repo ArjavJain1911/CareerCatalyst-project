@@ -46,7 +46,11 @@ router.post('/generate', (req, res) => {
         return res.status(400).json({ message: 'Please provide ingredients' });
     }
 
-    const title = `Sautéed ${ingredients[0]} Medley`;
+    const adjectives = ['Sautéed', 'Roasted', 'Spicy', 'Creamy', 'Zesty', 'Savory', 'Crispy', 'Homestyle'];
+    const suffixes = ['Medley', 'Delight', 'Feast', 'Bowl', 'Surprise', 'Classic', 'Skillet'];
+    const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+    const randomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+    const title = `${randomAdjective} ${ingredients[0]} ${randomSuffix}`;
     
     // Generate step-by-step instructions
     const steps = [];
