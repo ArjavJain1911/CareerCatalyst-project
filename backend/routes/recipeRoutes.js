@@ -50,7 +50,13 @@ router.post('/generate', (req, res) => {
     const suffixes = ['Medley', 'Delight', 'Feast', 'Bowl', 'Surprise', 'Classic', 'Skillet'];
     const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
     const randomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
-    const title = `${randomAdjective} ${ingredients[0]} ${randomSuffix}`;
+    
+    let mainIngredients = ingredients[0];
+    if (ingredients.length > 1) {
+        mainIngredients = `${ingredients[0]} & ${ingredients[1]}`;
+    }
+    
+    const title = `${randomAdjective} ${mainIngredients} ${randomSuffix}`;
     
     // Generate step-by-step instructions
     const steps = [];
