@@ -68,9 +68,9 @@ router.post('/generate', (req, res) => {
     
     steps.push(`3. Heat olive oil in a large skillet over medium-high heat.`);
     
-    const proteins = ingredients.filter(i => ['Chicken Breast', 'Salmon', 'Beef', 'Shrimp', 'Tofu', 'Egg'].includes(i));
+    const proteins = ingredients.filter(i => ['Paneer', 'Lentils', 'Chickpeas', 'Soy Chunks', 'Tofu', 'Cheese'].includes(i));
     if (proteins.length > 0) {
-        steps.push(`4. Add the ${proteins.join(' and ')} to the skillet. Cook thoroughly until browned.`);
+        steps.push(`4. Add the ${proteins.join(' and ')} to the skillet. Cook thoroughly until golden or heated.`);
     }
 
     const veggies = ingredients.filter(i => !proteins.includes(i) && !['Pasta', 'Rice', 'Cheese'].includes(i));
