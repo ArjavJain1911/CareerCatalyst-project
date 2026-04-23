@@ -174,7 +174,7 @@ const App = () => {
       <nav className="glass-nav">
         <div className="nav-content">
           <div className="nav-logo">
-            <span className="logo-text">RecipeBox<span>AI</span></span>
+            <span className="logo-text">RecipeBox</span>
           </div>
           <ul className="nav-links">
             <li><button onClick={() => setView('dashboard')} className={view === 'dashboard' ? 'nav-btn active' : 'nav-btn'}>Dashboard</button></li>
