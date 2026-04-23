@@ -20,7 +20,12 @@ const ingredientsData = [
   { "id": 17, "ingredient": "Carrot", "icon": "🥕" },
   { "id": 18, "ingredient": "Bell Pepper", "icon": "🫑" },
   { "id": 19, "ingredient": "Tofu", "icon": "🧊" },
-  { "id": 20, "ingredient": "Lemon", "icon": "🍋" }
+  { "id": 20, "ingredient": "Lemon", "icon": "🍋" },
+  { "id": 21, "ingredient": "Dal", "icon": "🥣" },
+  { "id": 22, "ingredient": "Suji", "icon": "🌾" },
+  { "id": 23, "ingredient": "Yogurt", "icon": "🥛" },
+  { "id": 24, "ingredient": "Milk", "icon": "🍼" },
+  { "id": 25, "ingredient": "Ghee", "icon": "🧈" }
 ];
 
 const App = () => {
